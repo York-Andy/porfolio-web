@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'M PLUS Rounded 1c';
-    color: white;
+    color: rgb(194, 144, 144);
 }
 html{
     scroll-behavior: smooth;
@@ -47,15 +47,16 @@ body{
 }
 .inicio .logo i{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 #inicio header nav a{
-    color: #e2ede3;
+    color: #d2d8d2;
     text-decoration: none;
     display: inline-block;
     padding: 5px 10px;
     text-transform: uppercase;
     border: 2px solid transparent;
+    margin:10 20px;
 }
 #inicio header nav a:hover{
     border-bottom: 2px solid #ff5b00;
@@ -313,10 +314,15 @@ body{
     text-decoration: none;
     color: #007be5;
     font-weight: bold;
+    opacity :0;
+    transition:0.3s;
 }
 .trabajos .galeria .item:hover .info{
     opacity: 1;
     top: 0;
+}
+.trabajos .galeria .item:hover .info a {
+    opacity: 1; /* Se agrega para encender el botón al pasar el mouse */
 }
 /* SECCIÓN C O N T A C T O */
 .contacto{
